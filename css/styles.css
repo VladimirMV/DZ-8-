@@ -7,7 +7,8 @@
 :root{
     --header-text-color:#212121;
     --paragraf-text-color:#757575;
-    --accent-color:#2196F3;    --primery-background-color:#FFFFFF;
+    --accent-color:#2196F3;    
+    --primery-background-color:#FFFFFF;
     --n-row: 3; 
     --card-margin: 30px;
 }
@@ -291,7 +292,7 @@ color: var(--accent-color);
     color: #212121;
 }
 .command .p {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -406,10 +407,10 @@ color: var(--accent-color);
 {
     margin-left: 30px;
 }
-.text-wrapper{
+/*.text-wrapper{
     padding-top: 30px;
     padding-bottom: 30px;
-}
+}*/
 .link-icon{
     display: flex;
     width: 170px;
@@ -434,6 +435,7 @@ color: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .social-icon{
     display: flex;
