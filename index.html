@@ -61,12 +61,33 @@
           Ефективні рішення <br />
           для вашого бізнесу
         </h1>
+
         <!--Модальное окно-->
         <button data-modal-open type="button" class="button-hiro">
           Замовити послугу
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
+            <div class="form">
+              <h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
+            </div>
+            <div class="forms">
+              <form class="modal-form" autocomplete="off">
+                <div class="form-fild">
+                  <svg class="icon-close" width="18px" height="18px">
+                    <use href="./img/symbol.svg#person-black-18dp"></use>
+                  </svg>
+                  <input
+                    type="text"
+                    class="modal-form-input"
+                    name="name"
+                    id="name"
+                    placeholder=" "
+                  />
+                  <label for="name" class="modal-form-lable">Ім'я </label>
+                </div>
+              </form>
+            </div>
             <button data-modal-close class="icon-close-button">
               <svg class="icon-close" width="18px" height="18px">
                 <use href="./img/symbol.svg#icon-close-black-18dp"></use>
@@ -75,6 +96,7 @@
           </div>
         </div>
       </section>
+
       <!-- company benefits-->
       <section class="section benefits">
         <div class="conteiner">
@@ -423,6 +445,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- Подписка -->
+
+        <div class="mailing">
+          <h2 class="mailing-heder">Підпишіться на розсилку</h2>
+          <div class="mailing-form">
+            <form action="" class="form-mailing">
+              <div class="form-field">
+                <input
+                  type="email"
+                  class="form-input"
+                  name="mailing"
+                  id="mailing"
+                  placeholder="example@gmail.com"
+                />
+                <label for="mailing" class="form-label">E-mail</label>
+              </div>
+              <button type="submit" class="button-submit">Підписатися</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>

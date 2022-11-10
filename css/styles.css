@@ -594,6 +594,7 @@ body {
 
 .list-icon-wrapper {
   display: flex;
+  margin-right: 93px;
 }
 
 .fotter-item-icon:not(:last-child) {
@@ -641,7 +642,9 @@ body {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-right: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -681,4 +684,99 @@ body {
 .icon-close-button:focus {
   border: 1px solid rgba(33, 150, 243, 0.5);
   border-radius: 50%;
+}
+.mailing-heder {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.mailing-form {
+}
+.form-mailing {
+  display: flex;
+  width: 570px;
+}
+.form-field {
+  position: relative;
+  display: flex;
+
+  margin-right: 12px;
+}
+.form-input {
+  height: 50px;
+  width: 360px;
+  padding-left: 70px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+  background: #2f303a;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid rgba(33, 150, 243, 0.9);
+  /* color: var(--accent-color);*/
+}
+.button-submit {
+  position: relative;
+  width: 200px;
+  display: flex;
+  padding-left: 28px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-submit:hover,
+.button-submit:focus {
+  box-shadow: 0px 4px 4px rgba(256, 256, 256, 0.3);
+}
+.button-submit::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../img/icon-send.svg');
+  background-size: contain;
+  transform: translateY(calc(-50%));
+}
+.form-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
