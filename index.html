@@ -71,12 +71,10 @@
             <div class="form">
               <h3 class="form-title">Залиште свої дані, ми вам передзвонимо</h3>
             </div>
+            <!--Имя-->
             <div class="forms">
               <form class="modal-form" autocomplete="off">
                 <div class="form-fild">
-                  <svg class="icon-close" width="18px" height="18px">
-                    <use href="./img/symbol.svg#person-black-18dp"></use>
-                  </svg>
                   <input
                     type="text"
                     class="modal-form-input"
@@ -84,10 +82,89 @@
                     id="name"
                     placeholder=" "
                   />
+                  <svg class="icon-form" width="18px" height="18px">
+                    <use href="./img/symbol.svg#person-black-18dp"></use>
+                  </svg>
+
                   <label for="name" class="modal-form-lable">Ім'я </label>
                 </div>
               </form>
             </div>
+            <!--Телефон-->
+            <div class="forms">
+              <form class="modal-form" autocomplete="off">
+                <div class="form-fild">
+                  <input
+                    type="tel"
+                    class="modal-form-input"
+                    name="tel"
+                    id="tel"
+                    placeholder=" "
+                  />
+                  <svg class="icon-form" width="18px" height="18px">
+                    <use href="./img/symbol.svg#phone-black-18dp"></use>
+                  </svg>
+
+                  <label for="tel" class="modal-form-lable">Телефон</label>
+                </div>
+              </form>
+            </div>
+            <!--Почта-->
+            <div class="forms">
+              <form class="modal-form" autocomplete="off">
+                <div class="form-fild">
+                  <input
+                    type="email"
+                    class="modal-form-input"
+                    name="email"
+                    id="email"
+                    placeholder=" "
+                  />
+                  <svg class="icon-form" width="18px" height="18px">
+                    <use href="./img/symbol.svg#email-black-18dp"></use>
+                  </svg>
+
+                  <label for="email" class="modal-form-lable">Пошта</label>
+                </div>
+              </form>
+            </div>
+            <!--Комментарий-->
+            <form class="modal-form-com" autocomplete="off">
+              <div class="form-fild">
+                <textarea
+                  placeholder="Введіть текст"
+                  class="modal-form-input textarea"
+                  name="comment"
+                  id="comment"
+                  rows="5"
+                ></textarea>
+                <label for="comment" class="com-label">Коментар </label>
+              </div>
+            </form>
+            <!--Подтверждение-->
+            <form class="modal-form">
+              <label class="agree"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="">
+                  <span class="agree dogovor">Умови договору</span></a
+                >
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="agree"
+                  value="0"
+                />
+                <!-- Вариант с иконкой
+                <svg class="icon-checkbox" width="16px" height="15px">
+                  <use href="./img/symbol.svg#checkbox"></use>
+                </svg>-->
+                <span class="icon-checkbox"></span>
+              </label>
+            </form>
+            <button type="submit" class="button-submit-modal">
+              Відправити
+            </button>
+
             <button data-modal-close class="icon-close-button">
               <svg class="icon-close" width="18px" height="18px">
                 <use href="./img/symbol.svg#icon-close-black-18dp"></use>
