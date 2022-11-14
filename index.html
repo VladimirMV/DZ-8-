@@ -71,9 +71,10 @@
             <div class="form">
               <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
             </div>
-            <form class="modal-form" autocomplete="off">
+            <form name="modal-form" autocomplete="off">
               <!--Имя-->
               <div class="modal-form">
+                <label for="name" class="modal-form-lable">Ім'я </label>
                 <input
                   type="text"
                   class="modal-form-input"
@@ -84,12 +85,10 @@
                 <svg class="icon-form" width="18px" height="18px">
                   <use href="./img/symbol.svg#person-black-18dp"></use>
                 </svg>
-
-                <label for="name" class="modal-form-lable">Ім'я </label>
               </div>
               <!--Телефон-->
               <div class="modal-form">
-                <!-- <form class="modal-form" autocomplete="off"> -->
+                <label for="tel" class="modal-form-lable">Телефон</label>
                 <input
                   type="tel"
                   class="modal-form-input"
@@ -100,11 +99,10 @@
                 <svg class="icon-form" width="18px" height="18px">
                   <use href="./img/symbol.svg#phone-black-18dp"></use>
                 </svg>
-
-                <label for="tel" class="modal-form-lable">Телефон</label>
               </div>
               <!--Почта-->
               <div class="modal-form">
+                <label for="email" class="modal-form-lable">Пошта</label>
                 <input
                   type="email"
                   class="modal-form-input"
@@ -115,11 +113,10 @@
                 <svg class="icon-form" width="18px" height="18px">
                   <use href="./img/symbol.svg#email-black-18dp"></use>
                 </svg>
-
-                <label for="email" class="modal-form-lable">Пошта</label>
               </div>
               <!--Комментарий-->
               <div class="modal-form-com">
+                <label for="comment" class="com-label">Коментар </label>
                 <textarea
                   placeholder="Введіть текст"
                   class="modal-form-input textarea"
@@ -127,7 +124,6 @@
                   id="comment"
                   rows="5"
                 ></textarea>
-                <label for="comment" class="com-label">Коментар </label>
               </div>
               <!--Подтверждение-->
               <div class="modal-form-agree">
@@ -149,7 +145,7 @@
                   <span class="icon-checkbox"></span>
                 </label>
               </div>
-              <div class="modal-form">
+              <div class="modal-form-botton">
                 <button type="submit" class="button-submit-modal">
                   Відправити
                 </button>
