@@ -1,0 +1,29 @@
+/*-- Чим ми займаємося--*/
+/* Чем мы занимаемся*/
+.business{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.business.item {
+    position: relative;
+}
+
+.business-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+}
