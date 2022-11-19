@@ -1,4 +1,4 @@
-/*-- Чим ми займаємося--*/
+
 /* Чем мы занимаемся*/
 .business{
     display: flex;
@@ -6,7 +6,7 @@
     justify-content: space-between;
 }
 
-.business.item {
+.business .item {
     position: relative;
 }
 

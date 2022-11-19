@@ -13,41 +13,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--   Header   -->
-    <header class="page-header">
-      <div class="conteiner main-nav">
+    <header class="header conteiner">
+      <div class="header__container main-nav">
         <!-- Logo-->
         <a class="logo" href="/">
-          <span class="logo1">Web</span><span class="logoblack">Studio</span>
+          <span class="logo_accent">Web</span
+          ><span class="logo_black">Studio</span>
         </a>
         <!--Навигация хедера-->
-        <nav>
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link">Студія</a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a href="./index.html" class="link navigation__link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./partfolio.html" class="link carrent">Портфоліо</a>
+            <li class="navigation__item">
+              <a
+                href="./partfolio.html"
+                class="link navigation__link navigation__link--carrent"
+                >Портфоліо</a
+              >
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="navigation__item">
+              <a href="" class="link navigation__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <!--Контакты-->
         <ul class="contacts list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              ><svg class="icon-header-mail" width="16" height="12">
-                <use href="./img/symbol.svg#header-icon1"></use></svg
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              ><svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icon/symbol.svg#header-icon1"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link"
-              ><svg class="icon-header-mail" width="10" height="16">
-                <use href="./img/symbol.svg#header-icon2"></use></svg
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icon/symbol.svg#header-icon2"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -82,7 +89,11 @@
             <li class="item">
               <a href=""
                 ><div class="work-img">
-                  <img src="./img/tech-cr.jpg" alt="Технокряк" width="370" />
+                  <img
+                    src="./images/partfolio/partfolio-img1.jpg"
+                    alt="Технокряк"
+                    width="370"
+                  />
                   <div class="work-text">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -102,7 +113,7 @@
               <a href="">
                 <div class="work-img">
                   <img
-                    src="./img/golden-star.jpg"
+                    src="./images/partfolio/partfolio-img2.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                   />
@@ -125,7 +136,7 @@
               <a href="">
                 <div class="work-img">
                   <img
-                    src="./img/seafood.jpg"
+                    src="./images/partfolio/partfolio-img3.jpg"
                     alt="Ресторан Seafood"
                     width="370"
                   />
@@ -147,7 +158,11 @@
             <li class="item">
               <a href="">
                 <div class="work-img">
-                  <img src="./img/prime.jpg" alt="Проєкт Prime" width="370" />
+                  <img
+                    src="./images/partfolio/partfolio-img4.jpg"
+                    alt="Проєкт Prime"
+                    width="370"
+                  />
                   <div class="work-text">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -167,7 +182,11 @@
             <li class="item">
               <a href="">
                 <div class="work-img">
-                  <img src="./img/boxes.jpg" alt="Проєкт Boxes" width="370" />
+                  <img
+                    src="./images/partfolio/partfolio-img5.jpg"
+                    alt="Проєкт Boxes"
+                    width="370"
+                  />
                   <div class="work-text">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -187,7 +206,7 @@
               <a href="">
                 <div class="work-img">
                   <img
-                    src="./img/inspiration-has-no-borders.jpg"
+                    src="./images/partfolio/partfolio-img6.jpg"
                     alt="Inspiration has no Borders"
                     width="370"
                   />
@@ -210,7 +229,7 @@
               <a href="">
                 <div class="work-img">
                   <img
-                    src="./img/limited-edition.jpg"
+                    src="./images/partfolio/partfolio-img7.jpg"
                     alt="Видання Limited Edition"
                     width="370"
                   />
@@ -232,7 +251,11 @@
             <li class="item">
               <a href="">
                 <div class="work-img">
-                  <img src="./img/lab.jpg" alt="Проєкт LAB" width="370" />
+                  <img
+                    src="./images/partfolio/partfolio-img8.jpg"
+                    alt="Проєкт LAB"
+                    width="370"
+                  />
                   <div class="work-text">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -252,7 +275,7 @@
               <a href="">
                 <div class="work-img">
                   <img
-                    src="./img/growing-business.jpg"
+                    src="./images/partfolio/partfolio-img9.jpg"
                     alt="Growing Business"
                     width="370"
                   />
@@ -280,7 +303,8 @@
       <div class="conteiner futter-flex-conteiner">
         <div class="link-wrapper">
           <a class="logo" href="/">
-            <span class="logo1">Web</span><span class="logow">Studio</span>
+            <span class="logo_accent">Web</span
+            ><span class="logo_white">Studio</span>
           </a>
           <address>
             <!--<p>м. Київ, пр-т Лесі Українки, 26</p> -->
@@ -315,28 +339,28 @@
             <li class="fotter-item-icon">
               <a href="" class="footer-link-icon">
                 <svg class="social-icon" width="20px" height="20px">
-                  <use href="./img/symbol.svg#instagram-icon"></use>
+                  <use href="./images/icon/symbol.svg#instagram-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="fotter-item-icon">
               <a href="" class="footer-link-icon">
                 <svg class="social-icon" width="20px" height="20px">
-                  <use href="./img/symbol.svg#twitter-icon"></use>
+                  <use href="./images/icon/symbol.svg#twitter-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="fotter-item-icon">
               <a href="" class="footer-link-icon">
                 <svg class="social-icon" width="20px" height="20px">
-                  <use href="./img/symbol.svg#facebook-icon"></use>
+                  <use href="./images/icon/symbol.svg#facebook-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="fotter-item-icon">
               <a href="" class="footer-link-icon">
                 <svg class="social-icon" width="20px" height="20px">
-                  <use href="./img/symbol.svg#linkedin-icon"></use>
+                  <use href="./images/icon/symbol.svg#linkedin-icon"></use>
                 </svg>
               </a>
             </li>

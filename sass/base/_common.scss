@@ -51,3 +51,36 @@ body {
   padding-bottom: 94px;
   background-color: #ffffff;
 }
+
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: var(--header-text-color);
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  margin-right: 71px;
+}
+
+.logo_accent {
+  color: var(--accent-color);
+}
+
+.logo_black {
+  color: #000000;
+}
+
+.logo_white {
+  color: #ffffff;
+}
