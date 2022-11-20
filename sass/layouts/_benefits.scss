@@ -8,13 +8,11 @@
 .benefits-list {
   display: flex;
   justify-content: center;
-}
-
-.benefits-list .item:not(:last-child) {
+  & .item:not(:last-child) {
   margin-right: 30px;
 }
-
-.benefits-list .title {
+}
+.benefits-list__title {
   margin-top: 0;
   margin-bottom: 0px;
   color: var(--header-text-color);
@@ -23,7 +21,7 @@
   letter-spacing: 0.03em;
 }
 
-.benefits-list .text {
+.benefits-list__text {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
