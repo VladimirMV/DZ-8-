@@ -50,21 +50,21 @@ h1,
 h2,
 h3,
 h4,
-ul,
+h5,
+h6,
 p {
   margin: 0;
-  padding: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
-body {
-  color: var(--header-text-color);
-  background-color: var(--primery-background-color);
-  font-family: Roboto, sans-serif;
+.link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 .list {
@@ -73,17 +73,10 @@ body {
   margin: 0;
 }
 
-.conteiner {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  /* outline: 2px solid rgb(231, 194, 188) ;*/
-}
-
-.section {
-  margin-top: 0;
-  padding-bottom: 94px;
-  background-color: #ffffff;
+body {
+  color: var(--header-text-color);
+  background-color: var(--primery-background-color);
+  font-family: Roboto, sans-serif;
 }
 
 .section-title {
@@ -117,6 +110,19 @@ body {
 
 .logo_white {
   color: #ffffff;
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 2px solid rgb(231, 194, 188) ;*/
+}
+
+.section {
+  margin-top: 0;
+  padding-bottom: 94px;
+  background-color: #ffffff;
 }
 
 /**

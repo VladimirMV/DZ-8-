@@ -1,10 +1,10 @@
 // utils
 @import './utils/vars';
 @import './utils/visually-hidden';
-@import './utils/placeholders';
-@import './utils/mixins';
 // base styles*/
+@import './base/reset';
 @import './base/common';
+@import './base/container';
 // components
 @import './components/modal-form';
 // layuots

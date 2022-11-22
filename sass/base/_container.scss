@@ -1,11 +1,12 @@
-.container {
-  /* outline: 1px solid red; */
-
+.conteiner {
   width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 2px solid rgb(231, 194, 188) ;*/
+}
 
-  padding-left: 15px;
-  padding-right: 15px;
-
-  margin-left: auto;
-  margin-right: auto;
+.section {
+  margin-top: 0;
+  padding-bottom: 94px;
+  background-color: #ffffff;
 }
