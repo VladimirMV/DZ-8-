@@ -16,6 +16,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.main {
+  padding-top: 80px;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;

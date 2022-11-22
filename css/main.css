@@ -89,6 +89,19 @@ body {
   letter-spacing: 0.03em;
 }
 
+.main {
+  padding-top: 80px;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
