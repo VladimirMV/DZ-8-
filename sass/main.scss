@@ -1,6 +1,7 @@
 // utils
 @import './utils/vars';
 @import './utils/visually-hidden';
+/* @import './mixins.scss';*/
 // base styles*/
 @import './base/reset';
 @import './base/common';
@@ -18,3 +19,4 @@
 // layuots partfolio
 @import './layouts/filter';
 @import './layouts/gallery';
+
