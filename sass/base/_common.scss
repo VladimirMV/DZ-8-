@@ -9,12 +9,21 @@ body {
 
 .section-title {
   margin-top: 0px;
-  margin-bottom: 50px;
-  color: var(--header-text-color);
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-  letter-spacing: 0.03em;
+   font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.03em;
+    color: var(--header-text-color);
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+      line-height: 1.67;
+    }
+  
 }
 
 .main {
@@ -33,16 +42,24 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   margin-right: 71px;
-}
 
-.logo_accent {
+
+&_accent {
   color: var(--accent-color);
 }
 
-.logo_black {
+&_black {
   color: #000000;
 }
 
-.logo_white {
+&_white {
   color: #ffffff;
+}
+&__footer{
+text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
 }

@@ -22,7 +22,7 @@
     <header class="header conteiner">
       <div class="header__container main-nav">
         <!-- Logo-->
-        <a class="logo" href="/">
+        <a class="logo__footer" href="/">
           <span class="logo_accent">Web</span
           ><span class="logo_black">Studio</span>
         </a>
@@ -189,50 +189,50 @@
       <section class="benefits">
         <div class="conteiner section">
           <h2 hidden class="section-title">company benefits</h2>
-          <ul class="benefits-list list">
-            <li class="item">
-              <div class="icon-element">
-                <svg class="benefits-icon" width="70" height="70">
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__icon-element">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icon/symbol.svg#benefits-icon1"></use>
                 </svg>
               </div>
-              <h3 class="benefits-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefits-list__text">
+              <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-element">
-                <svg class="icon-header-mail" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__icon-element">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icon/symbol.svg#benefits-icon2"></use>
                 </svg>
               </div>
-              <h3 class="benefits-list__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="benefits-list__text">
+              <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-element">
-                <svg class="icon-header-mail" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__icon-element">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icon/symbol.svg#benefits-icon3"></use>
                 </svg>
               </div>
-              <h3 class="benefits-list__title">ПЛАНУВАННЯ</h3>
-              <p class="benefits-list__text">
+              <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+              <p class="benefits__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
-              <div class="icon-element">
-                <svg class="icon-header-mail" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__icon-element">
+                <svg class="benefits__icon" width="70" height="70">
                   <use href="./images/icon/symbol.svg#benefits-icon4"></use>
                 </svg>
               </div>
-              <h3 class="benefits-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefits-list__text">
+              <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -241,7 +241,7 @@
         </div>
       </section>
       <!-- Чим ми займаємося-->
-      <section class="section">
+      <section class="section business">
         <div class="conteiner">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="business list">
@@ -278,11 +278,36 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                src="./images/team/member1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-1/img-1.jpg    1x,
+                    ./images/team/img-1/img-1-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-1/img-1-tab.jpg    1x,
+                    ./images/team/img-1/img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-1/img-1-mob.jpg    1x,
+                    ./images/team/img-1/img-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  src="./images/team/img-1/img-1.jpg"
+                  height="450"
+                  width="460"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="text-wrapper">
                 <h3 class="h">Ігор Дем'яненко</h3>
                 <p class="p">Product Designer</p>
@@ -326,11 +351,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/member2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-2/img-1.jpg    1x,
+                    ./images/team/img-2/img-1-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-2/img-1-tab.jpg    1x,
+                    ./images/team/img-2/img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-2/img-1-mob.jpg    1x,
+                    ./images/team/img-2/img-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  src="./images/team/img-2/img-1.webp"
+                  height="450"
+                  width="460"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <h3 class="h">Ольга Рєпіна</h3>
               <p class="p">Frontend Developer</p>
               <ul class="icon-wrapper list">
@@ -365,11 +416,36 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/member3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-3/img-1.jpg    1x,
+                    ./images/team/img-3/img-1-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-3/img-1-tab.jpg    1x,
+                    ./images/team/img-3/img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-3/img-1-mob.jpg    1x,
+                    ./images/team/img-3/img-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  src="./images/team/img-3/img-1.webp"
+                  height="450"
+                  width="460"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="h">Микола Тарасов</h3>
               <p class="p">Marketing</p>
               <ul class="icon-wrapper list">
@@ -404,11 +480,35 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team/member4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img-4/img-1.jpg    1x,
+                    ./images/team/img-4/img-1-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-4/img-1-tab.jpg    1x,
+                    ./images/team/img-4/img-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/img-4/img-1-mob.jpg    1x,
+                    ./images/team/img-4/img-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                />
+                <img
+                  src="./images/team/img-4/img-1.webp"
+                  height="450"
+                  width="460"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="h">Михайло Єрмаков</h3>
               <p class="p">UI Designer</p>
               <ul class="icon-wrapper list">

@@ -2,20 +2,48 @@
   | Footer section
 */
 .footer {
+  margin: 0 auto;
   padding-top: 60px;
-  padding-bottom: 60px;
   background-color: #2f303a;
+  @media screen and (min-width: 768px) {
+      padding-bottom: 180px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 100%;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
 }
 .futter-flex-conteiner {
-  /*display: flex;
-  align-items: baseline;*/
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // outline: 3px solid blue;
+  
+    @media screen and (mxn-width: 480px) {
+      flex-basis: calc(100% / 3);
+    }
+  
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
 }
 .link-wrapper {
   width: 231px;
   margin-right: 70px;
 }
 .contact-footer {
-  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -67,8 +95,27 @@
 }
 
 .footer-icon-wrapper {
-  width: 206px;
-  margin-right: 93px;
+  justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+  
+    @media (min-width: 480px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    @media (min-width: 768px) {
+      justify-content: space-between;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      width: calc(100% / 2 - 30px);
+    }
+  
+    @media (min-width: 1200px) {
+      margin-right: 93px;
+      width: auto;
+    }
 }
 
 .list-icon-wrapper {
@@ -102,7 +149,9 @@
 /*-- Подписка --*/
 
 .mailing {
-  width: 570px;
+  margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .mailing-heder {
@@ -114,10 +163,21 @@
   color: #ffffff;
 }
 
-/*.mailing-form {
-  display: flex;
-  align-items: flex-end;
-}*/
+.mailing-form {
+  align-items: center;
+    justify-content: center;
+  
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+  
+    @media screen and (min-width: 768px) {}
+  
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      display: flex;
+    }
+}
 .form-mailing {
   /*display: flex;
   width: 570px;*/

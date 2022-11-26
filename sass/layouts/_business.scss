@@ -1,17 +1,21 @@
 
 /* Чем мы занимаемся*/
 .business{
-   /* display: flex;
-    align-items: center;*/
+ display: flex;
+    align-items: center;
     justify-content: space-between;
-}
+    @media screen and (max-width: 1199px) {
+            display: none;
+        }
 
-.business__item {
+
+&__item {
     position: relative;
+    
 }
 
-.business__text {
-    /*display: flex;*/
+&__text {
+    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -26,4 +30,5 @@
     text-transform: uppercase;
     color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
+}
 }
