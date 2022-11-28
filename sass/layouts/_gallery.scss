@@ -4,9 +4,13 @@
 
 /* вторая страница*/
 .work {
- /* display: flex;
-  flex-wrap: wrap;*/
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+      display: flex;
+        flex-wrap: wrap;
+      /*  justify-content: space-between;*/
+    }
+ 
+  
   text-decoration: none;
   gap: var(--card-margin);
   &::before {
@@ -18,7 +22,21 @@
 
 .work__item {
   display: block;
-  flex-basis: calc((100% - var(--card-margin) * (var(--n-row) - 1)) / var(--n-row));
+  @media screen and (min-width: 480px) {
+      width: auto;
+    }
+  
+    @media screen and (min-width: 768px) {
+    
+    /*width: 354px;*/
+    flex-basis: calc((100% - var(--card-margin) ) / 2);
+  
+    @media screen and (min-width: 1200px) {
+    
+      flex-basis: calc((100% - var(--card-margin) * (var(--n-row) - 1)) / var(--n-row));
+    }
+    }
+  /*flex-basis: calc((100% - var(--card-margin) * (var(--n-row) - 1)) / var(--n-row));*/
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -76,6 +94,18 @@
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  @media screen and (max-width: 768px) {
+      width: 450px;
+      height: 146px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
 }
 
 .work-img {

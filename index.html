@@ -22,7 +22,7 @@
     <header class="header conteiner">
       <div class="header__container main-nav">
         <!-- Logo-->
-        <a class="logo__footer" href="/">
+        <a class="logo logo__header" href="/">
           <span class="logo_accent">Web</span
           ><span class="logo_black">Studio</span>
         </a>
@@ -64,7 +64,49 @@
           </li>
         </ul>
       </div>
+      <!-- МОБИЛЬНОЕ МЕНЮ -->
+
+      <button
+        class="menu-buttom is-open"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+          <use
+            class="icon-cross"
+            href="./images/icon/symbol.svg#close_24px"
+          ></use>
+          <use
+            class="icon-menu"
+            href="./images/icon/symbol.svg#menu_24px"
+          ></use>
+        </svg>
+      </button>
+      <div class="mob-menu is-open" data-menu>
+        <div class="mob-menu__content">
+          <!-- Контент мобильного меню  > -->
+
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a
+                href="./index.html"
+                class="link mob-menu__link mob-menu__link--carrent"
+                >Студія</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="./partfolio.html" class="link mob-menu__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="link mob-menu__link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
+
     <main class="main">
       <!-- Секция HERO-->
       <section class="hero">
@@ -601,7 +643,7 @@
     <footer class="footer">
       <div class="conteiner futter-flex-conteiner">
         <div class="link-wrapper">
-          <a class="logo" href="/">
+          <a class="logo logo__footer" href="/">
             <span class="logo_accent">Web</span
             ><span class="logo_white">Studio</span>
           </a>
@@ -688,5 +730,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
