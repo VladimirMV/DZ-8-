@@ -684,6 +684,7 @@ textarea::placeholder {
   color: #2196F3;
 }
 
+/*  Разделитель*/
 .mob-menu__line::after {
   content: "|";
   position: absolute;
