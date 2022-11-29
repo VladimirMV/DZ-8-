@@ -110,13 +110,13 @@ display: flex;
   font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height, or 122% */
   
     letter-spacing: 0.02em;
   
     color: #2196F3;
 }
-/*  Разделитель*/
+/*  Разделитель*/ 
+
 .mob-menu__line::after {
     content: "|";
     position: absolute;
