@@ -19,7 +19,7 @@
 
   <body id="body">
     <!--   Header   -->
-    <header class="header conteiner">
+    <header class="conteiner header">
       <div class="header__container main-nav">
         <!-- Logo-->
         <a class="logo logo__header" href="/">
@@ -63,29 +63,34 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-buttom is-open"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="24"
+            height="16"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/icon/symbol.svg#close_24px"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./images/icon/symbol.svg#menu_24px"
+            ></use>
+          </svg>
+        </button>
       </div>
       <!-- МОБИЛЬНОЕ МЕНЮ -->
 
-      <button
-        class="menu-buttom is-open"
-        aria-expanded="false"
-        data-menu-button
-      >
-        <svg width="24" height="16" aria-label="Переключатель мобильного меню">
-          <use
-            class="icon-cross"
-            href="./images/icon/symbol.svg#close_24px"
-          ></use>
-          <use
-            class="icon-menu"
-            href="./images/icon/symbol.svg#menu_24px"
-          ></use>
-        </svg>
-      </button>
       <div class="mob-menu is-open" data-menu>
-        <div class="mob-menu__content">
-          <!-- Контент мобильного меню  > -->
+        <div class="mob-menu__navigation">
+          <!-- Контент мобильного меню  -->
 
+          <!-- Навигация  -->
           <ul class="mob-menu__list list">
             <li class="mob-menu__item">
               <a
@@ -103,6 +108,32 @@
               <a href="" class="link mob-menu__link">Контакти</a>
             </li>
           </ul>
+          <div class="mob-menu__contact">
+            <ul class="mob-menu__contacts list">
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="mob-menu__tel-link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-menu__mail-link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Соцсети -->
+          <div class="mob-menu__social">
+            <ul class="mob-menu__social list">
+              <li>
+                <a href="" class="mob-menu__social-link">Instagram</a
+                ><span class="mob-menu__line"></span>
+              </li>
+              <li><a href="" class="mob-menu__social-link">Twitter</a></li>
+              <li><a href="" class="mob-menu__social-link">Facebook</a></li>
+              <li><a href="" class="mob-menu__social-link">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>

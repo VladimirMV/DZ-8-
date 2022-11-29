@@ -1,14 +1,17 @@
+
+/* Кнопка меню */
 .menu-buttom {
   width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 77;
+ display: flex;
+padding-top: 12px;
+padding-bottom: 12px;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  z-index: 7777;
   border: none;
   margin-left: auto;
   background-color: transparent;
-
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -22,29 +25,44 @@ display: block;}
 .menu-buttom .icon-menu {
   display: none;
 }
-
 .menu-buttom.is-open .icon-menu {
   display: block;
 }
 
 .mob-menu{
-display: none;
+  
+display: block;
 position: absolute;
-top: 40;
+top: 0;
 left: 0;
-width: 100%;
-text-align: center;
-background: #FFFFFF;
 z-index: 777;
-&.is-open {
-    display: block;
+width: 100%;
+height: 786px;
+text-align: left;
+background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+@media screen and (min-width: 767px) {
+    display: none;
   }
+&.is-open {
+    display: none;
+   
+  }
+ 
+}
+.mob-menu__navigation{
+padding-left: 40px;
+padding-top: 48px;
+}
+.mob-menu__list{
+margin-bottom: 306px;
+}
+.mob-menu__contact{
+
 }
 
 .mob-menu__item{
-padding-left: 40px;
-  padding-top: 48px;
- /* margin-bottom: 32px;*/
+ margin-bottom: 32px;
   }
 
 .mob-menu__link{
@@ -60,9 +78,53 @@ padding-left: 40px;
 .mob-menu__link--carrent{
   color: var(--accent-color);
 }
+.contacts__item{
+  margin-bottom: 32px;
+  &:last-child{
+  margin-bottom: 64px;
+  }
+}
+.mob-menu__tel-link{
+  margin-bottom: 32px;
+ font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+}
+.mob-menu__mail-link{
+  margin-bottom: 64px;
+  font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+  text-decoration: none;
+    color: #757575;
 
+}
+.mob-menu__social{
+display: flex;
+}
+.mob-menu__social-link{
+  position: relative;
+  font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+  
+    letter-spacing: 0.02em;
+  
+    color: #2196F3;
+}
 
-
-
+.mob-menu__line::after {
+    content: "|";
+    position: absolute;
+    width: 1px;
+    color: rgba(33, 33, 33, 0.2);
+    height: 22px;
+    top: 0%;
+    right: -10%;
+  }
 
 
