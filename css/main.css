@@ -593,6 +593,7 @@ textarea::placeholder {
   display: block;
 }
 
+/*Мобильное меню */
 .mob-menu {
   display: block;
   position: absolute;
