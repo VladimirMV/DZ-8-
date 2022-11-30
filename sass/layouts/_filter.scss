@@ -5,24 +5,31 @@
 */
 /* Фильтр работ */
 .section.works {
-  padding-top: 96px;}
+  padding-top: 96px;
+  @media screen and (max-width: 768px) {
+    padding-top: 60px;
+  }
+}
   
 .filter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 56px;
-  /*@media screen and (min-width: 768px) {
-      flex-wrap: 
-    }*/
+  @media screen and (max-width: 768px) {
+      justify-content: flex-start; ; 
+    }
 }
 
 .filter__item {
   align-items: center;
   margin-bottom: 0;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;}
   &:not(:last-child) {
     margin-right: 8px;
-    margin-bottom: 0;
+    
   }
 
 }

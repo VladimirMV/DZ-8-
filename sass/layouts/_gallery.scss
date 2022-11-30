@@ -4,13 +4,12 @@
 
 /* вторая страница*/
 .work {
+  margin: o,auto;
   @media screen and (min-width: 768px) {
       display: flex;
         flex-wrap: wrap;
-      /*  justify-content: space-between;*/
+         justify-content: space-between;
     }
- 
-  
   text-decoration: none;
   gap: var(--card-margin);
   &::before {
@@ -32,11 +31,11 @@
     flex-basis: calc((100% - var(--card-margin) ) / 2);
   
     @media screen and (min-width: 1200px) {
-    
+    /*width: 370px;*/
       flex-basis: calc((100% - var(--card-margin) * (var(--n-row) - 1)) / var(--n-row));
     }
     }
-  /*flex-basis: calc((100% - var(--card-margin) * (var(--n-row) - 1)) / var(--n-row));*/
+  
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
