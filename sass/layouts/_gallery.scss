@@ -10,6 +10,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    
     }
   text-decoration: none;
   gap: var(--card-margin);
@@ -17,20 +18,24 @@
     top: -30px;
     left: -30px;
   }
+  
 }
 
 
 .work__item {
   display: block;
+  height: auto;
+
   @media screen and (min-width: 480px) {
       width: auto;
+
     }
   
     @media screen and (min-width: 768px) {
     
     /*width: 354px;*/
     flex-basis: calc((100% - var(--card-margin) ) / 2);
-  
+   
     @media screen and (min-width: 1200px) {
     /*width: 370px;*/
       flex-basis: calc((100% - var(--card-margin) * (var(--n-row) - 1)) / var(--n-row));
@@ -95,12 +100,13 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   @media screen and (max-width: 768px) {
-      width: 450px;
-      height: 146px;
+      width: 100%;
+      margin-bottom: 30px;
     }
   
     @media screen and (min-width: 768px) {
       width: 354px;
+      height: 146px;
     }
   
     @media screen and (min-width: 1200px) {
