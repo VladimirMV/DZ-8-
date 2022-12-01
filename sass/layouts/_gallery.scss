@@ -4,11 +4,12 @@
 
 /* вторая страница*/
 .work {
-  margin: o,auto;
+  margin: 0 auto;
+
   @media screen and (min-width: 768px) {
       display: flex;
-        flex-wrap: wrap;
-         justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   text-decoration: none;
   gap: var(--card-margin);

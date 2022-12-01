@@ -1812,7 +1812,7 @@ textarea::placeholder {
   | Gallery section*/
 /* вторая страница*/
 .work {
-  margin: o, auto;
+  margin: 0 auto;
   text-decoration: none;
   gap: var(--card-margin);
 }
