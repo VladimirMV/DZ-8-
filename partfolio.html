@@ -150,27 +150,28 @@
         <div class="conteiner">
           <h1 hidden>Наши работы</h1>
           <!-- фильтр -->
-
+        <nav>
           <ul class="filter list">
-            <li class="filter__item">
-              <button type="button" class="button">Усі</button>
+            <li  class="filter__item">
+              <button data-f = "all" type="button" class="button">Усі</button>
             </li>
-            <li class="filter__item">
-              <button type="button" class="button">Веб-сайти</button>
+            <li  class="filter__item">
+              <button data-f = "web" type="button" class="button">Веб-сайти</button>
             </li>
-            <li class="filter__item">
-              <button type="button" class="button">Додатки</button>
+            <li  class="filter__item">
+              <button data-f = "apl" type="button" class="button">Додатки</button>
             </li>
-            <li class="filter__item">
-              <button type="button" class="button">Дизайн</button>
+            <li  class="filter__item">
+              <button data-f = "designe" type="button" class="button">Дизайн</button>
             </li>
-            <li class="filter__item">
-              <button type="button" class="button">Маркетинг</button>
+            <li  class="filter__item">
+              <button data-f = "market" type="button" class="button">Маркетинг</button>
             </li>
           </ul>
+        </nav>
           <!-- Галлерея работ-->
           <ul class="work list">
-            <li class="work__item">
+            <li class="work__item web ">
               <a href=""
                 ><div class="work-img">
                   <picture>
@@ -218,7 +219,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item designe">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -265,7 +266,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item apl">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -313,7 +314,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item market">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -361,7 +362,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item apl">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -387,7 +388,7 @@
                       media="(min-width:480px)"
                     />
                     <img
-                      src="./images/projects/project-5/5.jpg"
+                      src="./images/projects/project-5/1.jpg"
                       alt="Приложение"
                       width="450"
                       height="294"
@@ -408,7 +409,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item web">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -434,7 +435,7 @@
                       media="(min-width:480px)"
                     />
                     <img
-                      src="./images/projects/project-6/6.jpg"
+                      src="./images/projects/project-6/1.jpg"
                       alt="Веб-сайт"
                       width="450"
                       height="294"
@@ -455,7 +456,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item designe">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -481,7 +482,7 @@
                       media="(min-width:480px)"
                     />
                     <img
-                      src="./images/projects/project-7/7.jpg"
+                      src="./images/projects/project-7/1.jpg"
                       alt="Дизайн"
                       width="450"
                       height="294"
@@ -502,7 +503,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item web">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -549,7 +550,7 @@
                 </div></a
               >
             </li>
-            <li class="work__item">
+            <li class="work__item apl">
               <a href="">
                 <div class="work-img">
                   <picture>
@@ -691,7 +692,9 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
     <script src="./js/menu.js"></script>
+    <script src="./js/filter.js"></script>
+    
   </body>
 </html>
